@@ -438,7 +438,7 @@ char *instrumentacao_leControlador(void)
 	while( 	recebeMensagem( socketNuvem, resposta, 1000) > 0 );
 	
 	// Envia comando para o controlador	
-	enviaMensagem( socketNuvem, enderecoControlador, "nuvem");
+	enviaMensagem( socketNuvem, enderecoControlador, "35");
 
 	// Socket da nuvem sai por timeout de 4s
 	tv.tv_sec = 4;
